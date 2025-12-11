@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REGISTRATION - FORM</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="form-bg">
+
+<div class="form-box slide-up">
+
+    <h1><i class="fa-solid fa-user-pen"></i> Form Filling</h1>
+
+    <form id="regForm">
+
+        <!-- NAME -->
+        <label><i class="fa-solid fa-user"></i> Name</label>
+        <input type="text" id="name">
+        <p class="error" id="nameError"></p>
+
+        <!-- EMAIL -->
+        <label><i class="fa-solid fa-envelope"></i> Email</label>
+        <input type="text" id="email">
+        <p class="error" id="emailError"></p>
+
+        <!-- PASSWORD -->
+        <label><i class="fa-solid fa-lock"></i> Password</label>
+
+        <div class="password-wrapper">
+            <input type="password" id="password">
+            <i class="fa-solid fa-eye-slash toggle-icon" id="togglePassword"></i>
+        </div>
+
+        <div class="dots">
+            <div id="dot1" class="dot"></div>
+            <div id="dot2" class="dot"></div>
+            <div id="dot3" class="dot"></div>
+        </div>
+        <p class="error" id="passError"></p>
+
+        <!-- RE-ENTER -->
+        <label><i class="fa-solid fa-key"></i> Re-enter Password</label>
+        <div class="password-wrapper">
+            <input type="password" id="repassword">
+            <i class="fa-solid fa-eye-slash toggle-icon" id="toggleRePassword"></i>
+        </div>
+        <p class="error" id="repassError"></p>
+
+        <!-- NEXT PAGE BUTTON -->
+        <button id="nextBtn" class="btn" disabled>
+            Next Page <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Message</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="form-bg">
+
+<div class="form-box slide-up">
+
+    <h1><i class="fa-solid fa-comment-dots"></i> Your Message</h1>
+
+    <label><i class="fa-solid fa-pen"></i> Type your message (200 characters max)</label>
+    <textarea id="msgBox" maxlength="200" class="msg-area"></textarea>
+
+    <p id="msgCount">0 / 200 characters</p>
+    <p class="error" id="msgError"></p>
+
+    <button id="finalSubmit" class="btn enabled">
+        Submit <i class="fa-solid fa-paper-plane"></i>
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
